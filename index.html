@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTstagram Homepage</title>
+</head>
+<body>
+<!-- navigtion bar -->
+    <div id="navigationbar">
+        <h3 id="ig_logo"><img src="./ntlogo.png" alt="" style="height: 20%;width: 20%;border-radius: 50%;">NTstagram</h3>
+        <nav>
+            <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                  </svg>Home</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg> Search</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+                    <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                    <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+                  </svg>Explore</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-collection-play" viewBox="0 0 16 16">
+                    <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1zm2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"/>
+                    <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5h13z"/>
+                  </svg>Reels</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-right-text" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                  </svg>Messages</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>Notifications</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+                  </svg>Create</li>
+                <li><img src="https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg?auto=compress&cs=tinysrgb&w=300" alt="" height="20" width="20" id="profile_pic">Profile</li>
+            </ul>
+            <ul>
+              <li id="more"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentcolor" class="bi bi-view-list" viewBox="0 0 16 16">
+                <path d="M3 4.5h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H3zM1 2a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 2zm0 12a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 14z"/>
+              </svg>More</li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Main page -->
+    <div id="mainpage">
+      <div id="posts">
+
+        
+        <div class="postinfo">
+          <div class="post_head">
+            <div class="left">
+              <img src="https://t3.ftcdn.net/jpg/01/22/73/18/240_F_234731865_cfA7K0uujNPwTjIs0ux5lyn9WbM5fYQ7.jpg" class="profile" alt="beachpeople">
+              <p><i><b>Evening at beach side.</b></i></p>
+            </div>
+            <button class="icon_btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-three-dots" viewBox="0 0 16 16">
+              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+            </svg>More</button>
+          </div>
+          <div class="post_img">
+            <img src="https://images.pexels.com/photos/1387037/pexels-photo-1387037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          </div>
+          <div class="post_reaction">
+            <div class="left">
+              <button><i class="bi bi-heart"></i></button>
+              <button><i class="bi bi-chat"></i></button>
+              <button><i class="bi bi-share"></i></button>
+            </div>
+            <button><i class="bi bi-bookmark"></i></button>
+          </div>
+          <div class="post_comments">
+            <p id="likes"><b>6,337 likes</b></p>
+            <p id="all_comments">6,644 comments</p>
+            <p id="add_new_comment">Add new comment</p>
+          </div>
+          </div>
+
+          <div class="postinfo">
+            <div class="post_head">
+              <div class="left">
+                <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=600" class="profile" alt="beachpeople">
+                <p><i><b>Sunset is beatful really</b></i></p>
+              </div>
+              <button class="icon_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+              </svg>More</button>
+            </div>
+            <div class="post_img">
+              <img src="https://images.pexels.com/photos/2889492/pexels-photo-2889492.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+            <div class="post_reaction">
+              <div class="left">
+                <button><i class="bi bi-heart"></i></button>
+                <button><i class="bi bi-chat"></i></button>
+                <button><i class="bi bi-share"></i></button>
+              </div>
+              <button><i class="bi bi-bookmark"></i></button>
+            </div>
+            <div class="post_comments">
+              <p id="likes"><b>6,337 likes</b></p>
+              <p id="all_comments">6,644 comments</p>
+              <p id="add_new_comment">Add new comment</p>
+            </div>
+            </div>
+
+            <div class="postinfo">
+              <div class="post_head">
+                <div class="left">
+                  <img src="https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=600" class="profile" alt="beachpeople">
+                  <p><i><b>What is Love really...</b></i></p>
+                </div>
+                <button class="icon_btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-three-dots" viewBox="0 0 16 16">
+                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                </svg>More</button>
+              </div>
+              <div class="post_img">
+                <img src="https://images.pexels.com/photos/935789/pexels-photo-935789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+              </div>
+              <div class="post_reaction">
+                <div class="left">
+                  <button><i class="bi bi-heart"></i></button>
+                  <button><i class="bi bi-chat"></i></button>
+                  <button><i class="bi bi-share"></i></button>
+                </div>
+                <button><i class="bi bi-bookmark"></i></button>
+              </div>
+              <div class="post_comments">
+                <p id="likes"><b>6,337 likes</b></p>
+                <p id="all_comments">6,644 comments</p>
+                <p id="add_new_comment">Add new comment</p>
+              </div>
+              </div>
+
+              <div class="postinfo">
+                <div class="post_head">
+                  <div class="left">
+                    <img src="https://t3.ftcdn.net/jpg/01/22/73/18/240_F_234731865_cfA7K0uujNPwTjIs0ux5lyn9WbM5fYQ7.jpg" class="profile" alt="beachpeople">
+                    <p><i><b>Are you happy with your life..</b></i></p>
+                  </div>
+                  <button class="icon_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>More</button>
+                </div>
+                <div class="post_img">
+                  <img src="https://images.pexels.com/photos/3491940/pexels-photo-3491940.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+                </div>
+                <div class="post_reaction">
+                  <div class="left">
+                    <button><i class="bi bi-heart"></i></button>
+                    <button><i class="bi bi-chat"></i></button>
+                    <button><i class="bi bi-share"></i></button>
+                  </div>
+                  <button><i class="bi bi-bookmark"></i></button>
+                </div>
+                <div class="post_comments">
+                  <p id="likes"><b>6,337 likes</b></p>
+                  <p id="all_comments">6,644 comments</p>
+                  <p id="add_new_comment">Add new comment</p>
+                </div>
+                </div>
+
+                <div class="postinfo">
+                  <div class="post_head">
+                    <div class="left">
+                      <img src="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=600" class="profile" alt="beachpeople">
+                      <p><i><b>Cheering people up..</b></i></p>
+                    </div>
+                    <button class="icon_btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-three-dots" viewBox="0 0 16 16">
+                      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                    </svg>More</button>
+                  </div>
+                  <div class="post_img">
+                    <img src="https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  </div>
+                  <div class="post_reaction">
+                    <div class="left">
+                      <button><i class="bi bi-heart"></i></button>
+                      <button><i class="bi bi-chat"></i></button>
+                      <button><i class="bi bi-share"></i></button>
+                    </div>
+                    <button><i class="bi bi-bookmark"></i></button>
+                  </div>
+                  <div class="post_comments">
+                    <p id="likes"><b>6,337 likes</b></p>
+                    <p id="all_comments">6,644 comments</p>
+                    <p id="add_new_comment">Add new comment</p>
+                  </div>
+                  </div>
+
+                  <div class="postinfo">
+                    <div class="post_head">
+                      <div class="left">
+                        <img src="https://images.pexels.com/photos/1182238/pexels-photo-1182238.jpeg?auto=compress&cs=tinysrgb&w=300" class="profile" alt="beachpeople">
+                        <p><i><b>What a beauty..?</b></i></p>
+                      </div>
+                      <button class="icon_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                      </svg>More</button>
+                    </div>
+                    <div class="post_img">
+                      <img src="https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </div>
+                    <div class="post_reaction">
+                      <div class="left">
+                        <button><i class="bi bi-heart"></i></button>
+                        <button><i class="bi bi-chat"></i></button>
+                        <button><i class="bi bi-share"></i></button>
+                      </div>
+                      <button><i class="bi bi-bookmark"></i></button>
+                    </div>
+                    <div class="post_comments">
+                      <p id="likes"><b>6,337 likes</b></p>
+                      <p id="all_comments">6,644 comments</p>
+                      <p id="add_new_comment">Add new comment</p>
+                    </div>
+                    </div>
+          </div>
+
+
+      <div id="suggestions">
+      <div id="user_div">
+        <img class="iphoto" src="https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="iphoto">
+        <div class="profile_name">
+          <p>StarOne100</p>
+          <p style="font-size: smaller;">Star One Brive</p>
+          </div>
+          <button class="user_btn" type="menu">Switch</button>
+        </div>
+        <div class="sg">
+          <p style="color: rgb(255, 255, 255, 0.9); font-size: 20px;">suggestion for you</p>
+          <button id="see_all">see all</button>
+        </div>
+        <div id="user_div">
+          <img class="iphoto" src="https://images.pexels.com/photos/718978/pexels-photo-718978.jpeg?auto=compress&cs=tinysrgb&w=600" alt="iphoto">
+          <div class="profile_name">
+            <p>Manxi-28</p>
+            <p style="font-size: smaller;">Manzi David</p>
+            </div>
+            <button class="user_btn" type="menu">Follow</button>
+          </div>
+
+          <div id="user_div">
+            <img class="iphoto" src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="iphoto">
+            <div class="profile_name">
+              <p>john_sim20</p>
+              <p style="font-size: smaller;">John Smith</p>
+              </div>
+              <button class="user_btn" type="menu">Follow</button>
+            </div>
+
+            <div id="user_div">
+              <img class="iphoto" src="data:image/jpeg;base64,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" alt="iphoto">
+              <div class="profile_name">
+                <p>rama_mwe100</p>
+                <p style="font-size: smaller;"> Ramadhani Mwemedi</p>
+                </div>
+                <button class="user_btn" type="menu">Follow</button>
+              </div>
+
+      </div>
+    </div>  
+</body>
+</html>

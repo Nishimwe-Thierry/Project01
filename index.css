@@ -1,0 +1,156 @@
+#ig_logo{
+    font-family: "Lobster";
+    font-weight: 100;
+    display: flex;
+    font-size: 30px;
+}
+body{
+    display: flex;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+}
+#navigationbar{
+   height: 100vh;
+   flex: 0.2;
+   border-right: solid 1px wheat;
+   padding: 10px;
+   font-size: 20px;
+   padding-right: 8px;
+   padding-left: 0px;
+}
+#mainpage{
+   flex: 0.8;
+   overflow-y: auto;
+   display: flex;
+   height: 100%;
+}
+ul{
+    list-style: none;
+    gap: 0;
+}
+li:hover{
+    background-color: rgba(255, 255, 255, 0.123);
+    color: rgb(67, 233, 255);
+    border-radius: 10px;
+}
+li{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    padding-left: 0px;
+    align-items: center;
+
+}
+#profile_pic{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+#more{
+    position: absolute;
+    bottom: 0px;
+}
+#posts{
+    flex: 0.8;
+    padding: 70px;
+    padding-top: 10px;
+
+}
+.postinfo{
+    width: 500px;
+}
+.profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.post_head{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    gap: 10px;
+}
+.icon_btn{
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    display: grid;
+}
+    .icon_btn:hover{
+        background-color:rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        height: 50px;
+        width: 50px;
+}
+.post_img{
+    padding: 30px;
+}
+.post_img  img{
+    height: 400px;
+    width: 100%;
+}
+    .post_reaction{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+.post_reaction button{
+    display: flex;
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    border: none;
+}
+.post_reaction button :hover{
+    background-color:rgba(255, 255, 255, 0.4);
+    border-radius: 40%;
+    width: 40px;
+    height: 40px;
+}
+.post_comments{
+    padding-top: 0px;
+    padding: 30px;
+}
+#user_div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 20px;
+
+}
+.iphoto{
+ height: 60px;
+ width: 60px;
+ border-radius: 50%;
+}
+.user_btn{
+    background-color: transparent;
+    border: none;
+    color: 
+    dodgerblue;
+    font-size: 20px;
+
+}
+.sg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#see_all{
+     color: black;
+     font-weight: 700;
+     height: 30px;
+     width: 60px;
+}
+.profile_name{
+    justify-content: space-between;
+}
+#suggestions{
+    position: sticky;
+    top: 10px;
+}
